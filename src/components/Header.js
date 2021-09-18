@@ -17,7 +17,7 @@ const Menu = withRouter(({history}) => (
   <AppBar position="static">
     <Toolbar>
       <Typography variant="h6" color="inherit">
-        1st Nations Mortgage Corp
+        CodeChef7
       </Typography>
     </Toolbar>
   </AppBar>

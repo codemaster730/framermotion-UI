@@ -3,7 +3,7 @@ import _ from 'lodash';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import { AnimateSharedLayout, AnimatePresence, motion } from 'framer-motion';
-import logo from '../favicon.png';
+import logo from '../logo.svg';
 import clsx from 'clsx';
 import Container from '@material-ui/core/Container';
 
@@ -145,12 +145,12 @@ const MainPage = () => {
     const classes = useStyles();
     const [selectedId, setSelectedId] = useState(null);
     const items = [
-        {label:"Property Use", type:"select", value:"My Primary Residence", options:['My Primary Residence','2nd','3rd']},
-        {label:"Property Value", type:"text", value:"$550000", placeholder:"$000000"},
-        {label:"Loan Amount", type:"text", value:"$220000", placeholder:"$000000"},
-        {label:"Property Zip Code", type:"text", value:"80303", placeholder:"00000"},
-        {label:"Property Type", type:"select", value:"Single Family Detached", options:['Single Family Detached','2nd','3rd']},
-        {label:"Credit Score", type:"select", value:"760+", options:['760+','2nd','3rd']},
+        {label:"Role", type:"select", value:"Frontend Developer", options:['Frontend Developer','Backend Developer']},
+        {label:"Earn Amount", type:"text", value:"$15000", placeholder:"$000000"},
+        {label:"Sallery", type:"text", value:"$8000", placeholder:"$000000"},
+        {label:"Contact", type:"text", value:"live:.cid.bf34bce4d3afbc06", placeholder:"00000"},
+        {label:"Skill Set", type:"select", value:"React", options:['React','Vue','Angular', 'Laravel']},
+        {label:"Level", type:"select", value:"Senior", options:['Senior','Junior']},
         
     ];
     const [opacity, setOpacity] = useState(1);
@@ -178,11 +178,11 @@ const MainPage = () => {
                         <Grid container direction="row" alignItems="center" justify="space-between">
                             <Grid style={{display: 'flex', alignItems: 'center'}}>
                                 <img src={logo} className={classes.logo}/>
-                                <h1 className={classes.logoTitle}>1st Nations Mortgage Corp</h1>
+                                <h1 className={classes.logoTitle}>CodeChef7</h1>
                             </Grid>
                             <Grid style={{display: 'flex', alignItems: 'center'}}>
-                                <h2 className={clsx(classes.contactInfo, classes.logoTitle)} style={{marginRight: '20px'}}>Chat</h2>
-                                <h2 className={clsx(classes.contactInfo, classes.logoTitle)}>720-220-7465</h2>
+                                <h2 className={clsx(classes.contactInfo, classes.logoTitle)} style={{marginRight: '20px'}}>Skype</h2>
+                                <h2 className={clsx(classes.contactInfo, classes.logoTitle)}>live:.cid.bf34bce4d3afbc06</h2>
                             </Grid>
                         </Grid>
                     </Grid>
@@ -192,7 +192,7 @@ const MainPage = () => {
                     <Grid item xs={12} sm={12} style={{position: 'relative'}}>
                         <motion.div animate={{opacity: opacity}}>
                             <div className={classes.termsOfService} style={{marginRight: '10px'}}>Terms of Service</div>
-                            <div className={classes.adTitle}>Today's 30-year refinance rates</div>
+                            <div className={classes.adTitle}>CodeChef7</div>
                         </motion.div>
                     </Grid>
                     <Grid item style={{width: '100%', marginTop: '30px'}}>
@@ -264,7 +264,7 @@ const MainPage = () => {
                         <div className={clsx(classes.lenderTitle, classes.mbLarge)}>LENDER</div>
                         <div style={{display: 'flex', alignItems: 'center', marginTop: '40px'}} className={classes.mbMedium}>
                             <img src={logo} className={classes.logoSmall}/>
-                            <div className={classes.lenderTitle} style={{marginLeft: '5px'}}>1st Nations Mortgage Corp NMLS 2924</div>
+                            <div className={classes.lenderTitle} style={{marginLeft: '5px'}}>CodeChef7</div>
                         </div>
                         <div>
                             <span className="fa fa-star checked"></span>
@@ -277,7 +277,7 @@ const MainPage = () => {
                     <Grid item sm={2}>
                         <div className={clsx(classes.lenderTitle, classes.mbLarge)}>RATE</div>
                         <div className={clsx(classes.fontLenderValue, classes.mbSmall)}>2.375%</div>
-                        <div style={{fontWeight: '500'}}>30 year fixed refinance</div>
+                        <div style={{fontWeight: '500'}}>CodeChef7</div>
                     </Grid>
                     <Grid item sm={2}>
                         <div className={clsx(classes.lenderTitle, classes.mbLarge)}>APR</div>
