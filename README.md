@@ -15,5 +15,5 @@
 
 
 <pre>
-  Demo site (https://refi.easyrefi.me/)
+  Demo site (<a href="https://refi.easyrefi.me/"></a>)
 </pre>
